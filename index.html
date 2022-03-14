@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <!--Adding External CSS files-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--Title-->
+    <div class="title"><b>StopWatch</b></div>
+    <div class="stopwatch-box">
+        
+        <!--StopWatch Container-->
+        <div class="container">
+            <div class="watch">
+                <div class="outer-circle">
+                    <div class="inner-circle">
+                        <span class="time minutes"><span class="stopwatch">Press Start</span></span>
+                        <span class="time seconds"> </span>
+                        <span class="time milliSeconds"></span>
+
+                    </div>
+                </div>
+                <div class="watch-buttons">
+                    <button class="btn reset">RESET</button>
+                    <button class="btn start">START</button>
+                    <button class="btn lap">LAP</button>
+                </div>
+                <div class="clear-btn">
+                    <input type="button" class="clear" value="CLEAR ALL" onClick="location.reload()">
+                </div>
+
+            </div>
+        </div>
+
+        <!--Lapse Sequencing-->
+        <div class="laps">
+            <ol class="time-laps">
+                <span class="ranking"></span>
+            </ol>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <!--Setting Up script-->
+
+</body>
+
+</html>
